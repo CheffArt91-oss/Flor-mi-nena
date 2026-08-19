@@ -134,10 +134,7 @@ document.getElementById('think').onclick=()=>{
 };
 document.getElementById('musicBtn').onclick=()=>{
   const m=document.getElementById('music');
-  if(!m.src){
-    alert('La página ya está preparada para la canción. Cuando me mandes el MP3, la integramos.');
-    return;
-  }
+  if(!m.src){m.src='romeo-y-julieta.mp3';}
   if(m.paused){m.play();document.getElementById('musicBtn').textContent='Ⅱ Pausar canción'}
   else{m.pause();document.getElementById('musicBtn').textContent='♫ Nuestra canción'}
 };
